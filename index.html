@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json file</title>
+    <script>
+        async function loadAndDisplayJSON() {
+            try {
+                const response = await fetch('words.json');
+                
+                if (!response.ok) {
+                    throw new Error('somethings went wrongs.');
+                }
+
+                const jsonData = await response.json();
+
+                const formattedJson = JSON.stringify(jsonData, null, 4);
+                document.getElementById('json-display').textContent = formattedJson;
+            } catch (error) {
+                document.getElementById('json-display').textContent = 'error: ' + error.message;
+            }
+        }
+
+        window.onload = loadAndDisplayJSON;
+    </script>
+</head>
+<body>
+    <pre id="json-display">Loading JSON...</pre>
+</body>
+</html>
