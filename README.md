@@ -1,7 +1,7 @@
 # 📚 English Words & Meanings for Farsi Speakers
 
 <p align="center">
-  <img src="https://www.svgrepo.com/show/300972/book.svg" alt="Book Icon" width="120"/>
+  <img src="https://hamid.storage.iran.liara.space/dictionary.png" alt="Dictionary" width="120"/>
 </p>
 
 به ریپوزیتوری **English Words & Meanings for Farsi Speakers** خوش آمدید! 🌟  
